@@ -1,14 +1,14 @@
 import "./assets/styles/main.scss"
 import { AppFooter } from "./cmp/app-footer"
 import { AppHeader } from "./cmp/app-header"
-import { Home } from "./pages/Home"
+import { MapApp } from "./cmp/map-app"
 
 function App() {
   return (
     <div className="App main-container">
       <AppHeader />
       <main>
-        <Home />
+        <MapApp/>
       </main>
       <AppFooter />
     </div>
