@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/map-markers-react/static/css/main.ec1d9c5d.css",
-    "main.js": "/map-markers-react/static/js/main.da869f0f.js",
+    "main.css": "/map-markers-react/static/css/main.b2664060.css",
+    "main.js": "/map-markers-react/static/js/main.57f4ea87.js",
     "static/js/787.2771012c.chunk.js": "/map-markers-react/static/js/787.2771012c.chunk.js",
+    "static/media/pin-svgrepo-com.svg": "/map-markers-react/static/media/pin-svgrepo-com.8feaf6113733fc32064d5d97f904d474.svg",
     "index.html": "/map-markers-react/index.html",
-    "main.ec1d9c5d.css.map": "/map-markers-react/static/css/main.ec1d9c5d.css.map",
-    "main.da869f0f.js.map": "/map-markers-react/static/js/main.da869f0f.js.map",
+    "main.b2664060.css.map": "/map-markers-react/static/css/main.b2664060.css.map",
+    "main.57f4ea87.js.map": "/map-markers-react/static/js/main.57f4ea87.js.map",
     "787.2771012c.chunk.js.map": "/map-markers-react/static/js/787.2771012c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec1d9c5d.css",
-    "static/js/main.da869f0f.js"
+    "static/css/main.b2664060.css",
+    "static/js/main.57f4ea87.js"
   ]
 }
