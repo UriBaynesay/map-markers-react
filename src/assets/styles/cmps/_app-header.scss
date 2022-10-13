@@ -1,6 +1,11 @@
 .app-header {
+    display: flex;
+    justify-content: center;
     padding: 10px;
-    background-color: lightsalmon;
-    color: white;
+    color: #222;
     text-align: center;
+    img{
+        height: 50px;
+        width: fit-content;
+    }
 }
