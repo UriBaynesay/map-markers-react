@@ -1,20 +1,34 @@
 import { useState } from "react"
 
-import { Map } from "./map";
+import { Map } from "./map"
 import { MarkersList } from "./markers-list"
 
-export const MapApp=()=>{
-    const [markers,setMarkers]=useState([])
+export const MapApp = () => {
+  const [markers, setMarkers] = useState([])
 
-    const onAddMarker=(marker)=>{
-        setMarkers([
-          ...markers,
-          { lat: marker.latLng.lat(), lng: marker.latLng.lng()},
-        ])
-    }
+  const onAddMarker = (marker) => {
+    setMarkers([
+      ...markers,
+      {
+        _id: marker.domEvent.timeStamp,
+        lat: marker.latLng.lat(),
+        lng: marker.latLng.lng(),
+      },
+    ])
+  }
 
-    return <section className="map-app-container">
-        <MarkersList markers={markers}/>
-        <Map onAddMarker={onAddMarker} markers={markers}/>
+  const onRemoveMarker = (marker) => {
+    setMarkers([...markers.filter((m) => m !== marker)])
+  }
+
+  return (
+    <section className="map-app-container">
+      <MarkersList markers={markers} />
+      <Map
+        onAddMarker={onAddMarker}
+        onRemoveMarker={onRemoveMarker}
+        markers={markers}
+      />
     </section>
+  )
 }

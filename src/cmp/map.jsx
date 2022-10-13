@@ -1,5 +1,5 @@
 import React from "react"
-import { GoogleMap, useJsApiLoader,Marker } from "@react-google-maps/api"
+import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api"
 
 const containerStyle = {
   width: "100%",
@@ -11,7 +11,7 @@ const center = {
   lng: -38.523,
 }
 
-function _Map({ onAddMarker, markers }) {
+function _Map({ onAddMarker, markers, onRemoveMarker }) {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
     googleMapsApiKey: "AIzaSyCNv4OkuFcFX30VsoIv9bOiWVAmfON1oyM",
@@ -26,7 +26,7 @@ function _Map({ onAddMarker, markers }) {
     >
       <>
         {markers.map((marker) => {
-          return <Marker position={marker}></Marker>
+          return <Marker key={marker._id} position={marker} onClick={()=>onRemoveMarker(marker)}></Marker>
         })}
       </>
     </GoogleMap>

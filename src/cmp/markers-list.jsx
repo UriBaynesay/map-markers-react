@@ -6,7 +6,7 @@ export const MarkersList = ({ markers }) => {
       <ul className="map-markers-list">
         <li className="marker-preview-container">
           {markers.map((marker) => (
-            <MarkerPreview marker={marker} />
+            <MarkerPreview marker={marker} key={marker._id}/>
           ))}
         </li>
       </ul>
