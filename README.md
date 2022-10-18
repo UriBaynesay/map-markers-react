@@ -1,9 +1,9 @@
-## Map Markers
+# Map Markers
 
-# Link https://uribaynesay.github.io/map-markers-react/
+## Link https://uribaynesay.github.io/map-markers-react/
 
-# Description
+## Description
 This app enables you to click on a map and save pins on a map (markers)
 
-# Tech Used
+## Tech Used
 React , GoogleMaps API
