@@ -23,6 +23,7 @@ function _Map({ onAddMarker, markers, onRemoveMarker }) {
       center={center}
       zoom={15}
       onRightClick={onAddMarker}
+      mapContainerClassName="map-container"
     >
       <>
         {markers.map((marker) => {
