@@ -1,13 +1,17 @@
 .map-markers-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   .marker-preview-container {
-    box-shadow: 0px 0px 3px 0px #6d6d6d7d;
-    width: 80%;
+    box-shadow: 0px 0px 3px 0px rgb(109 109 109 / 49%);
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    @media (min-width:900px) {
+      width:80%;
+    }
     border-radius: 0.3em;
-    margin-bottom: 10px;
+    margin-block: 10px;
     button{
       color: rgba(255, 0, 0, 0.555);
     }

@@ -1,10 +1,6 @@
 import React from "react"
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api"
 
-const containerStyle = {
-  width: "100%",
-  height: "70vh",
-}
 
 const center = {
   lat: -3.745,
@@ -19,7 +15,6 @@ function _Map({ onAddMarker, markers, onRemoveMarker }) {
 
   return isLoaded ? (
     <GoogleMap
-      mapContainerStyle={containerStyle}
       center={center}
       zoom={15}
       onRightClick={onAddMarker}
