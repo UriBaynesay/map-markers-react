@@ -1,5 +1,6 @@
-.map-app-container{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    
+.map-app-container {
+  display: grid;
+  @media (min-width: 900px) {
+    grid-template-columns: 1fr 0.5fr;
+  }
 }

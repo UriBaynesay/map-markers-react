@@ -23,12 +23,12 @@ export const MapApp = () => {
 
   return (
     <section className="map-app-container">
-      <MarkersList markers={markers} onRemoveMarker={onRemoveMarker} />
       <Map
         onAddMarker={onAddMarker}
         onRemoveMarker={onRemoveMarker}
         markers={markers}
       />
+      <MarkersList markers={markers} onRemoveMarker={onRemoveMarker} />
     </section>
   )
 }
